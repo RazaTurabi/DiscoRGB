@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Disc0.css">
+</head>
+<body id="body">
+    <h1>D I S C O</h1>
+</body>
+    <script>
+        color = 'red'
+        function shuffleColor() {
+            if(color == 'red') color = 'green'
+            else if (color == 'green') color = 'blue'
+            else if (color == 'blue') color = 'red'
+            document.getElementById("body").style.backgroundColor = color
+        }
+
+        setInterval(shuffleColor, 1000)
+    </script>
+</html>
